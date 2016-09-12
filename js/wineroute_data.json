@@ -1,4 +1,4 @@
-var zipcode1string = {
+var apiResponse = {
 	restaurants: [
 			{
 			id: 876,
@@ -651,13 +651,3 @@ var zipcode1string = {
 
 			]
 	}
-
-
-var zipcode2string = {,
-restaurants: [
-		
-		]
-}
-
-var zipcode1 = JSON.parse(zipcode1string);
-var zipcode2 = JSON.parse(zipcode2string);
