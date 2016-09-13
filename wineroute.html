@@ -7,12 +7,17 @@
 
 <script src='https://api.mapbox.com/mapbox-gl-js/v0.23.0/mapbox-gl.js'></script>
 <link href='https://api.mapbox.com/mapbox-gl-js/v0.23.0/mapbox-gl.css' rel='stylesheet'/>
+<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-draw/v0.2.2/leaflet.draw.js'></script>
 <style>
 	body { margin:0; padding:0; }
     #map { position:relative bottom:0; top:0; width:100%; }
     #types-container { position:absolute; bottom:0; width:100%; }
     #types { position:absolute; bottom:0; height: 100px; width:100%; }
 	.mapboxgl-popup-content { pointer-events: none !important; }
+    .mapboxgl-popup {
+        max-width: 400px;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
 	.output-property { cursor: pointer; }
 	.output-property.active { background: #000; }
 </style>
@@ -22,8 +27,8 @@
 <h1>Where to eat in Napa?</h1>    
 <p>Use this map to find wheelchair accessible restaurants along a Napa route.</p>     
 <div id='map' style='width: 2400px; height: 1200px;'></div>
-</div>  
 
+<script>L.mapbox.accessToken = 'pk.eyJ1IjoibW9yZ2FuaGVybG9ja2VyIiwiYSI6Ii1zLU4xOWMifQ.FubD68OEerk74AYCLduMZQ'</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
 <script src="js/wineroute_data.js"></script>
 <script src="js/wineroute.js"></script>
